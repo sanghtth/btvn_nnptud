@@ -1,0 +1,61 @@
+{
+  "$schema": "./node_modules/json-server/schema.json",
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100,
+      "isDeleted": true
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    },
+    {
+      "id": "3",
+      "title": "book",
+      "views": "2222",
+      "isDeleted": false
+    },
+    {
+      "id": "4",
+      "title": "xxxx",
+      "views": "12222",
+      "isDeleted": false
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "3",
+      "postId": "3",
+      "text": "sâs",
+      "isDeleted": false
+    },
+    {
+      "id": "4",
+      "postId": "2",
+      "text": "sâs",
+      "isDeleted": false
+    },
+    {
+      "id": "5",
+      "postId": "4",
+      "text": "cdwww",
+      "isDeleted": false
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -2,28 +2,46 @@
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
-    <title>Product Table</title>
+    <title>Posts & Comments</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Danh sách sản phẩm</h1>
+    <div class="container">
+      <h1>Posts & Comments Management</h1>
 
-    <table>
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>Title</th>
-          <th>Slug</th>
-          <th>Price</th>
-          <th>Category</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody id="productTableBody">
-        <!-- Data render here -->
-      </tbody>
-    </table>
+      <!-- POSTS SECTION -->
+      <div class="card">
+        <h2>Posts</h2>
 
-    <script src="script.js"></script>
+        <div class="form-row">
+          <input id="title" type="text" placeholder="Post title" />
+          <input id="views" type="number" placeholder="Views" />
+          <button onclick="addPost()">Add Post</button>
+        </div>
+
+        <div id="postList" class="post-list">
+          <!-- Posts render here -->
+        </div>
+      </div>
+
+      <!-- COMMENTS SECTION -->
+      <div class="card">
+        <h2>Comments</h2>
+
+        <div class="form-row">
+          <input id="commentText" type="text" placeholder="Comment content" />
+          <button onclick="addComment()">Add Comment</button>
+        </div>
+
+        <ul id="commentList" class="comment-list">
+          <!-- Comments render here -->
+        </ul>
+      </div>
+    </div>
+
+    <!-- JS FILES (KHÔNG ĐỔI) -->
+    <script src="api.js"></script>
+    <script src="posts.js"></script>
+    <script src="comments.js"></script>
   </body>
 </html>

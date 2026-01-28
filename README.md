@@ -1,4 +1,5 @@
-# nnptud_ngay28-1
+Hoang Thanh Sang - 2280602704
 
-Hoàng Thanh Sang
-Mssv: 2280602704
+chạy
+npx json-server db.json
+Xong rồi chạy live server
